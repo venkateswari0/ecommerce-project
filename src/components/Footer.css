@@ -1,0 +1,267 @@
+.footer {
+  background-color: #172337;
+  color: white;
+  padding: 40px 0 0 0;
+  margin-top: 60px;
+  border-top: 1px solid #1a2845;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Footer Section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-list a:hover {
+  color: #00bcd4;
+  transform: translateX(4px);
+}
+
+/* Social Section */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a2845;
+  border: 2px solid #00bcd4;
+  border-radius: 50%;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #00bcd4;
+  color: #172337;
+  transform: scale(1.1);
+}
+
+/* App Downloads */
+.app-downloads h5 {
+  margin: 0 0 12px 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #0f1620;
+  border-top: 1px solid #1a2845;
+  padding: 20px 0;
+}
+
+.footer-bottom-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.company-info {
+  color: #888;
+  font-size: 12px;
+  margin: 0 0 8px 0;
+}
+
+.contact-info {
+  color: #888;
+  font-size: 12px;
+  margin: 0;
+}
+
+.contact-info a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #00e3ff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px 15px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px 15px;
+  }
+
+  .footer-title {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .footer-list a {
+    font-size: 12px;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px 10px;
+  }
+
+  .footer-title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .footer-list li {
+    margin-bottom: 8px;
+  }
+
+  .footer-list a {
+    font-size: 11px;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .download-btn {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .company-info,
+  .contact-info {
+    font-size: 10px;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+/* Hover Effects */
+.footer-section {
+  transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+  transform: translateY(-2px);
+}
+
+/* Link Animation */
+@keyframes linkHover {
+  0% {
+    opacity: 0.7;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+}
+
+.footer-list a:hover {
+  animation: linkHover 0.3s ease;
+}

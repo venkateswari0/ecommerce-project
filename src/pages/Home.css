@@ -1,0 +1,19 @@
+.home-page {
+  width: 100%;
+}
+
+.banner-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.products-section {
+  background-color: #0a1116;
+  padding: 20px 0;
+}
+
+.trending-section {
+  background-color: #0f1a27;
+  padding: 20px 0;
+}
